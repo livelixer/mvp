@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator</title>
+</head>
+<body>
+    <h1>Расчетка</h1>
+    <form method="POST">
+        <label for="rake_club">Rake Club:</label>
+        <input type="text" name="rake_club"><br>
+
+        <label for="rakeback">Rakeback:</label>
+        <input type="text" name="rakeback"><br>
+
+        <label for="rake_me">Rake_me:</label>
+        <input type="text" name="rake_me"><br>
+
+        <label for="rake_vitalik">Rake_vitalik:</label>
+        <input type="text" name="rake_vitalik"><br>
+
+        <label for="winrate_me">winrate_me:</label>
+        <input type="text" name="winrate_me"><br>
+
+        <label for="winrate_vitalik">winrate_vitalik:</label>
+        <input type="text" name="winrate_vitalik"><br>
+
+        <label for="rebate_club">Rebate:</label>
+        <input type="text" name="rebate_club"><br>
+
+        <label for="overlay">Overlay:</label>
+        <input type="text" name="overlay"><br>
+
+
+
+
+
+        <!-- Добавьте другие поля для ввода данных -->
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if my_funds %}
+        <h2>My Funds: {{ my_funds }}</h2>
+    {% endif %}
+</body>
+</html>
